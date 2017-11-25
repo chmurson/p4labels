@@ -1,0 +1,20 @@
+{
+  "name": "p4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "publish-gh-pages.js",
+  "dependencies": {
+    "gh-pages": "1.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "prepare-dist": "rm -rf dist && mkdir dist && cp *.html dist/ && cp *.css dist/ && cp -R fonts dist/ ",
+    "publish": "npm run prepare-dist && node publish-gh-pages.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-chmurson:chmurson/p4labels.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
