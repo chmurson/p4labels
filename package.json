@@ -9,7 +9,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "prepare-dist": "rm -rf dist && mkdir dist && cp *.html dist/ && cp *.css dist/ && cp -R fonts dist/ ",
+    "prepare-dist": "rm -rf dist && mkdir dist && cp *.html dist/ && cp *.css dist/ && cp -R fonts dist/ && cp -R images dist/ ",
     "generate-index-html": "node generate-index-html.js",
     "publish": "npm run generate-index-html && npm run prepare-dist && node publish-gh-pages.js"
   },

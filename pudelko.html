@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pudełko P47 - 9.5cm - 8cm</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<style>
+    .box-pudelko {
+        width: 9.5cm;
+        height: 8cm;
+        font-size: 1em;
+    }
+
+    .box-pudelko .content-container {
+        padding: 0 1em;
+        width: calc(100% - 2em);
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .box-pudelko .content-container .content-part-left {
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .box-pudelko .content-container .content-part-right {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .box-pudelko .content-container .content-part-right > div:FIRST-CHILD {
+        margin-top: 1em;
+    }
+    .box-pudelko .content-container .content-part-right > div:LAST-CHILD {
+        margin-bottom: 1em;
+    }
+
+    .icons {
+        width: 100%;
+        display: flex;
+    }
+
+    .icons img {
+        height: 1.4em;
+    }
+    .temperature-icon{
+        font-family: 'Panton';
+        display: flex;
+        align-items: center;
+    }
+</style>
+<body>
+<div id="box" class="box-pudelko">
+    <div class="content-container">
+        <div class="content-part-left">
+            <div>&nbsp;</div>
+            <div class="icons">
+                <img src="images/patelnia.png">
+                <img src="images/mikrofala.png">
+                <div class="temperature-icon">
+                    <img src="images/temperatura.png">
+                    <span>50</span>
+                </div>
+            </div>
+        </div>
+        <div class="content-part-right">
+            <div>
+                <div class="course-type">II śniadanie</div>
+                <div class="horizontal-line"></div>
+                <div class="course-name">Jagodowo-waniliowy napój roślinny z granolą kokosową</div>
+            </div>
+            <div>
+                <div class="horizontal-line-small"></div>
+                <div class="ingredients-title">
+                    Skład:
+                </div>
+                <div class="ingredients">
+                    Jagody - Mleko Sojowe - Wanilia - Miód- Nasiona GOYA - Płatki zbóż - orzechy - wiórki kokosowe -
+                    gorza
+                    czekolada
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="black-space"></div>
+    <div class="bleed-mark-left-top-corner"></div>
+    <div class="bleed-mark-right-top-corner"></div>
+    <div class="bleed-mark-left-bottom-corner"></div>
+    <div class="bleed-mark-right-bottom-corner"></div>
+</div>
+</body>
+</html>
