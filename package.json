@@ -4,12 +4,14 @@
   "description": "",
   "main": "publish-gh-pages.js",
   "dependencies": {
-    "gh-pages": "1.1.0"
+    "gh-pages": "1.1.0",
+    "jsdom": "^11.4.0"
   },
   "devDependencies": {},
   "scripts": {
     "prepare-dist": "rm -rf dist && mkdir dist && cp *.html dist/ && cp *.css dist/ && cp -R fonts dist/ ",
-    "publish": "npm run prepare-dist && node publish-gh-pages.js"
+    "generate-index-html": "node generate-index-html.js",
+    "publish": "npm run generate-index-html && npm run prepare-dist && node publish-gh-pages.js"
   },
   "repository": {
     "type": "git",

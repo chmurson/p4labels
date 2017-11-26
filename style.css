@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Theano Didot Regular";
-    src: url("fonts/TheanoDidot-Regular.eot?") format("eot"), url("fonts/TheanoDidot-Regular.woff") format("woff"), url("TheanoDidot-Regular.ttf") format("truetype"), url("fonts/TheanoDidot-Regular.svg#TheanoDidot-Regular") format("svg");
+    src: url("fonts/TheanoDidot-Regular.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
@@ -19,62 +19,65 @@
     src: url('fonts/Panton-Regular.woff') format('woff');
 }
 
-#box{
+#box {
     box-shadow: 21px 37px 150px 0px rgba(8, 8, 8, 0.43);
-    width: 531px;
-    height: 1181px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .content-container{
-    padding: 64px 32px
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100%;
 }
 
-.horizontal-line{
+.horizontal-line {
     width: 100%;
-    height: 4px;
+    height: 0.075em;
     background-color: black;
 }
 
-.horizontal-line-small{
+.horizontal-line-small {
     width: 100%;
-    height: 2px;
+    height: 0.05em;
     background-color: black;
 }
 
-#title{
+#title {
     font-family: "Theano Didot Regular";
-    color:  #11100e;
-    font-size: 122.2px;/* Przybliżenie (wynika z podstawienia czcionki) */
+    color: #11100e;
+    font-size: 3em;
     font-weight: 400;
-    transform: scaleY(1.1379);/* właściwości width (szerokość) i height (wysokość) pominięte w wyniku transformacji */
+    transform: scaleY(1.1379); /* właściwości width (szerokość) i height (wysokość) pominięte w wyniku transformacji */
+    margin-bottom: -0.25em;
 }
 
-#sub-title{
-    margin-top: 32px;
+#sub-title {
+    margin-top: 0.5em;
+    margin-bottom: 0.25em;
     font-family: 'PantonLight';
-    font-size: 75.34px;
-    text-align: justify;
+    font-size: 1.3em;
+    text-align: center;
 }
 
-#catch-phrase{
-    margin-top: 16px;
+#catch-phrase {
+    margin-top: 0.25em;
     font-family: 'Theano Didot Regular';
-    color:  #373328;
-    font-size: 30px;
+    color: #373328;
+    font-size: 0.6em;
     font-style: italic;
     text-align: center;
 }
 
-.name-of-menu{
+.name-of-menu {
     font-family: 'PantonLight';
     text-transform: uppercase;
     width: 530px;
     height: 77px;
-    color:  #060505;
-    font-size: 44.29px;/* Przybliżenie (wynika z podstawienia czcionki)*/
+    color: #060505;
+    font-size: 44.29px; /* Przybliżenie (wynika z podstawienia czcionki)*/
     background-color: #89b19b;
     text-align: center;
     display: flex;
@@ -83,22 +86,22 @@
     flex-shrink: 0;
 }
 
-.name-of-menu span{
+.name-of-menu span {
     position: relative;
     top: 4px;
 }
 
-.course-type{
+.course-type {
     font-family: "Theano Didot Regular";
-    font-size: 48px;
+    font-size: 0.9em;
     font-weight: 400;
     text-transform: uppercase;
 }
 
-.course-name{
-    margin-top: 16px;
-    margin-bottom: 16px;
-    font-size: 42px;
+.course-name {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 0.7em;
     font-style: italic;
     font-family: "PantonLight";
     font-weight: 200;
@@ -106,29 +109,74 @@
     word-wrap: break-word;
 }
 
-.ingredients-title{
-    margin-top: 16px;
+.ingredients-title {
+    margin-top: 0.5em;
     font-style: italic;
-    font-family: "Palatino";
-    font-size: 26px;
+    font-family: "Panton";
+    font-size: 0.5em;
     text-transform: uppercase;
 }
 
-.ingredients{
+.ingredients {
     font-style: italic;
     font-family: "PantonLight";
-    font-size: 26px;
+    font-size: 0.5em;
     text-transform: uppercase;
     word-wrap: break-word;
 }
 
-.white-space, .black-space{
-    height: 48px;
-}
-.white-space{
-    background-color: white;
-}
-.black-space{
+.black-space {
+    height: 0.3cm;
     background-color: black;
 }
 
+/* SPADY */
+#box {
+    padding: 0.3cm 0.3cm 0 0.3cm;
+    position: relative;
+}
+
+.black-space {
+    padding-bottom: 0.3cm;
+    margin-left: -0.3cm;
+    margin-right: -0.3cm;
+}
+
+.bleed-mark-left-top-corner, .bleed-mark-right-bottom-corner,
+.bleed-mark-left-bottom-corner, .bleed-mark-right-top-corner {
+    position: absolute;
+    height: 0.3cm;
+    width: 0.3cm;
+}
+
+.bleed-mark-left-top-corner {
+    left: 0;
+    top: 0;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+}
+
+.bleed-mark-left-bottom-corner {
+    left: 0;
+    bottom: 0;
+    color: white;
+    border-right: 1px solid;
+    border-top: 1px solid;
+}
+
+.bleed-mark-right-bottom-corner {
+    right: 0;
+    bottom: 0;
+    color: white;
+    border-left: 1px solid;
+    border-top: 1px solid;
+}
+
+.bleed-mark-right-top-corner {
+    right: 0;
+    top: 0;
+    border-left: 1px solid;
+    border-bottom: 1px solid;
+}
+
+/* SPADY - END */
