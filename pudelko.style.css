@@ -88,3 +88,14 @@
     text-transform: uppercase;
     margin-right: 2em;
 }
+
+.course-type{
+    font-size: 1.1em;
+}
+
+.course-name{
+    font-size: 1em;
+}
+.ingredients-title, .ingredients{
+    font-size: 0.6em;
+}
