@@ -46,7 +46,7 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .icons img.temperatura {
@@ -63,6 +63,12 @@
     font-family: 'Panton';
     display: flex;
     align-items: center;
+    margin-left: -0.25em;
+}
+
+.temperature-icon span {
+    position: relative;
+    top: 0.1em;
 }
 
 .bottom-content-container{
